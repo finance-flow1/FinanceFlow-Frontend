@@ -27,7 +27,7 @@ jobs:
       docker_context: .
       dockerfile_path: Dockerfile
       service-name: financeflow-frontend
-      sonar_project_key: FinanceFlow-Frontend
+      sonar_project_key: FinanceFlow-Client
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
