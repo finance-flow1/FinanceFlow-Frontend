@@ -15,7 +15,7 @@ const Orb = ({ size, top, left, color, delay = 0 }) => (
 );
 
 const features = [
-  { icon: '📊', title: 'Smart Analytics haha',      desc: 'Visual income vs expense charts across 12 months' },
+  { icon: '📊', title: 'Smart Analytics',      desc: 'Visual income vs expense charts across 12 months' },
   { icon: '💳', title: 'Transaction Tracking', desc: 'Create, filter and manage all your financial records' },
   { icon: '🔔', title: 'Live Notifications',   desc: 'Instant alerts every time a transaction is recorded' },
   { icon: '🛡️', title: 'Secure by Design',     desc: 'JWT auth, bcrypt hashing, and role-based access' },
