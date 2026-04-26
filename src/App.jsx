@@ -26,7 +26,7 @@ const PublicRoute = ({ children }) =>
 
 export default function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter>
       <Routes>
         <Route path="/"            element={<RootRedirect />} />
         <Route path="/login"       element={<PublicRoute><Login /></PublicRoute>} />
