@@ -198,6 +198,12 @@ export default function Login() {
           <div className="login-brand" style={{ position: 'relative', zIndex: 1 }}>
             <div className="login-brand-icon">💰</div>
             <span className="login-brand-name">FinanceFlow</span>
+            <span style={{
+              fontSize: '0.65rem', fontWeight: 700, color: '#818cf8',
+              background: 'rgba(99,102,241,0.15)', border: '1px solid rgba(99,102,241,0.3)',
+              borderRadius: '20px', padding: '2px 8px', letterSpacing: '0.04em',
+              alignSelf: 'center',
+            }}>v2.0</span>
           </div>
 
           {/* hero */}

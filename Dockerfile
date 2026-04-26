@@ -9,7 +9,8 @@ COPY package*.json ./
 RUN npm ci || npm install
 
 COPY . .
-RUN npm run build
+ARG BASE_PATH=/
+RUN npm run build -- --base=${BASE_PATH}
 
 # ── Production stage ─────────────────────────────────
 FROM nginx:alpine
