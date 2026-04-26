@@ -32,9 +32,6 @@ jobs:
       dockerfile_path: Dockerfile
       service-name: financeflow-frontend
       sonar_project_key: FinanceFlow-Client
-      # dev branch → base path /dev/ so SPA assets and router work at /dev
-      # main branch → base path / (standard prod)
-      docker_build_args: ${{ github.ref == 'refs/heads/dev' && 'BASE_PATH=/dev/' || 'BASE_PATH=/' }}
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
