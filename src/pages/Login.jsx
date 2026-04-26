@@ -15,7 +15,7 @@ const Orb = ({ size, top, left, color, delay = 0 }) => (
 );
 
 const features = [
-  { icon: '📊', title: 'Smart Analytics haha',      desc: 'Visual income vs expense charts across 12 months' },
+  { icon: '📊', title: 'Smart Analytics',      desc: 'Visual income vs expense charts across 12 months' },
   { icon: '💳', title: 'Transaction Tracking', desc: 'Create, filter and manage all your financial records' },
   { icon: '🔔', title: 'Live Notifications',   desc: 'Instant alerts every time a transaction is recorded' },
   { icon: '🛡️', title: 'Secure by Design',     desc: 'JWT auth, bcrypt hashing, and role-based access' },
@@ -198,6 +198,12 @@ export default function Login() {
           <div className="login-brand" style={{ position: 'relative', zIndex: 1 }}>
             <div className="login-brand-icon">💰</div>
             <span className="login-brand-name">FinanceFlow</span>
+            <span style={{
+              fontSize: '0.65rem', fontWeight: 700, color: '#818cf8',
+              background: 'rgba(99,102,241,0.15)', border: '1px solid rgba(99,102,241,0.3)',
+              borderRadius: '20px', padding: '2px 8px', letterSpacing: '0.04em',
+              alignSelf: 'center',
+            }}>v2.0</span>
           </div>
 
           {/* hero */}
