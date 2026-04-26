@@ -8,7 +8,8 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
-RUN npm run build
+ARG BASE_PATH=/
+RUN npm run build -- --base=${BASE_PATH}
 
 # ── Stage 2: Production ─────────────────────────────────────────────────────
 # Lean nginx image — only the compiled static assets, no Node.js or npm.
