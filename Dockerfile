@@ -10,7 +10,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-# ── Stage 2: Production ────────────────────────────────────────────────────
+# ── Stage 2: Production ───────────────────────────────────────────────────
 # Lean nginx image — only compiled static assets, running as root.
 FROM nginx:alpine AS runtime
 
