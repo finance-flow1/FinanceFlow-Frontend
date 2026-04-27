@@ -1,4 +1,4 @@
-# ── Stage 1: Build ─────────────────────────────────────────────────────────
+# ── Stage 1: Build ────────────────────────────────────────────────────────
 # Node layer compiles the React app; never ships to production.
 FROM node:20-alpine AS builder
 
